@@ -269,7 +269,7 @@
                                         I'd say it's already a good time to start with some visualisation. Here are some pie plots that represent much better the tabular data from above. One note to make is that multiregional conflicts were ignored for the sake of perspicuity, which doesn't affect the bigger picture since they're present in a much smaller number.
                                     </p>
 
-                                    <img class="br-30 mb-30" src="img/blog-img/per-region-pie-plot.png" alt="">
+                                    <img class="br-20 mb-30" src="img/blog-img/per-region-pie-plot.png" alt="">
 
                                     <p>
                                         The above pie charts help visualise the total percentage of conflict episodes and the percentage of war events by region. The plot on the left takes into account the total number of conflict episodes registered in the period 1946-2016, regardless of their intensity, while the pie plot on the right focuses on the major incidents which resulted in more than 1'000 battle-related casualties. Why 1'000? Because if you look at the definition of <i>war</i> in the UCDP dictionary, it will say that conflicts are considered as wars if the annual number of battle-related deaths surpasses 1'000.
@@ -283,13 +283,13 @@
                                         The only (barely) noticeable differences, that differ by more than one percent point, are Africa and the Americas. Africa has a larger share of wars than conflicts in general, while it is the opposite for the Americas region. This becomes more obvious from the stacked bar plot below, which shows that the percentage of wars over the total number of conflicts in Africa is 30%, which is larger than any other region where the ratio converges towards one quarter.
                                     </p>
 
-                                    <img class="br-30 mb-30" src="img/blog-img/conflict-intensity-ratio-per-region.png" alt="">
+                                    <img class="br-20 mb-30" src="img/blog-img/conflict-intensity-ratio-per-region.png" alt="">
 
                                     <p>
                                         The bar plot in the figure below shows the counts of conflict episodes split according to their severity, i.e. minor conflicts or wars. Just a little reminder, minor conflicts are conflict episodes where the number of deaths is between 25 and 999 (inclusive), whereas for an event to be considered a war the number of casualties must rise above 1'000.
                                     </p>
 
-                                    <img class="br-30 mb-30" src="img/blog-img/conflict-count-per-region.png" alt="">
+                                    <img class="br-20 mb-30" src="img/blog-img/conflict-count-per-region.png" alt="">
 
                                     <p>
                                         At the end, before concluding this section, I'd like to present one more table that shows the number of wars per region. It's good to take a look at these numbers, just for completeness, as they were used to produce the plots presented above.
@@ -332,6 +332,177 @@
 
                                     <h4>Conflicts by country</h4>
 
+                                    <p>
+                                        As a next step, we further disaggregate the data to the level of individual countries. We are interested in seeing which countries had the largest number of conflict episodes in the time period between 1946 and 2016. From the names of the countries who made into the top 10 and taken into consideration the rather large conflict count they experienced on their territory, it's no wonder the most prominent conflict regions during this period were Asia and the Middle East.
+                                    </p>
+
+                                    <h6 class="text-muted">Feel free to click on the countries' names in order to see the number of conflict episodes for that particular location</h6>
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <div class="list-group" id="list-tab" role="tablist">
+                                                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-myanmar" role="tab" aria-controls="home">Myanmar (Burma)</a>
+                                                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-india" role="tab" aria-controls="profile">India</a>
+                                                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-ethiopia" role="tab" aria-controls="messages">Ethiopia</a>
+                                                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-philippines" role="tab" aria-controls="settings">Philippines</a>
+                                                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-israel" role="tab" aria-controls="settings">Israel</a>
+                                                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-iraq" role="tab" aria-controls="settings">Iraq</a>
+                                                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-colombia" role="tab" aria-controls="settings">Colombia</a>
+                                                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-pakistan" role="tab" aria-controls="settings">Pakistan</a>
+                                                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-indonesia" role="tab" aria-controls="settings">Indonesia</a>
+                                                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-iran" role="tab" aria-controls="settings">Iran</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-1"></div>
+                                            <div class="col-6">
+                                                <div class="tab-content" id="nav-tabContent">
+                                                    <div class="tab-pane fade show active" id="list-myanmar" role="tabpanel" aria-labelledby="list-home-list">
+                                                        <h3><span class="badge badge-primary">271</span></h3>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="list-india" role="tabpanel" aria-labelledby="list-profile-list">
+                                                        <h3><span class="badge badge-primary">194</span></h3>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="list-ethiopia" role="tabpanel" aria-labelledby="list-messages-list">
+                                                        <h3><span class="badge badge-primary">127</span></h3>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="list-philippines" role="tabpanel" aria-labelledby="list-settings-list">
+                                                        <h3><span class="badge badge-primary">100</span></h3>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="list-israel" role="tabpanel" aria-labelledby="list-settings-list">
+                                                        <h3><span class="badge badge-primary">84</span></h3>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="list-iraq" role="tabpanel" aria-labelledby="list-settings-list">
+                                                        <h3><span class="badge badge-primary">73</span></h3>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="list-colombia" role="tabpanel" aria-labelledby="list-settings-list">
+                                                        <h3><span class="badge badge-primary">53</span></h3>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="list-pakistan" role="tabpanel" aria-labelledby="list-settings-list">
+                                                        <h3><span class="badge badge-primary">52</span></h3>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="list-indonesia" role="tabpanel" aria-labelledby="list-settings-list">
+                                                        <h3><span class="badge badge-primary">51</span></h3>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="list-iran" role="tabpanel" aria-labelledby="list-settings-list">
+                                                        <h3><span class="badge badge-primary">50</span></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    <p></p>
+
+                                    <p>
+                                        Now, in the interpretation of this data, it is important to have in mind that these countries didn't necessarily take part in the conflict as an actor, but all of the episodes happened on their territory, which undoubtedly lead to them suffering the consequences of those events.
+                                    </p>
+
+                                    <p>
+                                        The next figure shows the top 20 locations in the World with the largest number of conflict episode events. The total number is then broken down into two components based on the episode intensity level, namely into minor conflicts and wars. It can be easily seen that Myanmar (Burma) is in the lead, both in the number of minor conflicts and wars on its territory, even though the number of wars is significantly smaller compared to the number of minor conflicts.
+                                    </p>
+
+                                    <img class="br-20 mb-30" src="img/blog-img/conflict-count-per-country.png" alt="">
+
+                                    <p>
+                                        It is also worth mentioning that Afghanistan, Sudan and Angola have a higher number of wars than minor incidents in their conflict history, with a percentage as high as 88% for Afghanistan and 75% for Sudan out of the total.
+                                    </p>
+
+                                    <p>
+                                        The proportion of war episodes in the total number of conflict events for the top locations is more explicitly presented in the following stacked bar plot figure.
+                                    </p>
+
+                                    <img class="br-20 mb-30" src="img/blog-img/conflict-intensity-ratio-per-country.png" alt="">
+
+                                    <hr />
+
+                                    <blockquote class="yummy-blockquote mt-30 mb-30">
+                                        <h5 class="mb-30">“The world is full enough of hurts and mischances without wars to multiply them.”</h5>
+                                        <h6 class="text-muted">J.R.R. Tolkien, The Return of the King</h6>
+                                    </blockquote>
+
+                                    <h4>A timeline of casualties</h4>
+
+                                    <p>
+                                        We saw the distribution of the number of conflicts per region and per country, so now it will be useful to examine the number of battle-related deaths caused by those conflicts. Battle-related deaths is simply a way of saying number of suffered casualties and it's computed as the sum of losses suffered by each of the two sides, reported civilian deaths and other deaths connected to the event which could not be classified in any of the previous categories. Since the original data comes from a different number of sources, such as news agencies reporting for the event, it is not always trivial to get a good estimate on the number of fatalities. Therefore, there are three numbers in the data: low estimate, best estimate and high estimate. The low and the high estimate represent a reasonable range for the casualties value, while the best estimate is actually the most reliable one. Sadly, the number of losses is not available prior to 1989.
+                                    </p>
+
+                                    <img class="br-20 mb-30" src="img/blog-img/battle-deaths-timeline.png" alt="">
+
+                                    <p>
+                                        There are three very prominent peeks in the shown timeline for the years 1990, 1999 and 2014, where the low and the best estimates which are pretty close to each other indicate approximately 80'000 fatalies for the first two years and go slightly above 100'000 for 2014. If we look at the high estimates, which according to the UCDP methodology of creating the datasets are not an exaggerated, but on the contrary rather conservative figure, the number of battle-related deaths rises well above 120'000 for the year 2014, which is by far the worst year in terms of casualties for the given period between 1989 and 2016. The available data shows a decreasing tendency after that, but since there are only two more years after 2014, it is impossible to precisely determine the trend. Even though the slope of the line is large, the absolute value of the figures is among the largest. Unfortunately, drawing a conslusion that conflicts might be settling in the period to come is far-fetched as there is simply not enough evidence to suggest that.
+                                    </p>
+
+                                    <hr />
+
+                                    <blockquote class="yummy-blockquote mt-30 mb-30">
+                                        <h5 class="mb-30">“Only the dead have seen the end of war.”</h5>
+                                        <h6 class="text-muted">Plato</h6>
+                                    </blockquote>
+
+                                    <h4>Conflict actors relationships</h4>
+
+                                    <p>
+                                        One of the major points I'd like to make in this post is visualising a network structure of interconnected nodes which represent conflicted sides based on the UCDP Georeferenced Event Dataset. We will see two separate network plots: state-based and non-state conflict graph. Here I feel I should explain some terminology. The former represents the conflicts where at least one party is a government of a country, whereas the latter depicts relations between organised groups where no government was involved on either side. Also, in order to keep the plots as simple as possible, only the primary actors in a conflict were included, i.e. the figure doesn't include supporters or allies who fought together with the primary actors. Both graphs cover the time period between 1989 and 2016, same as the battle-related deaths timeline chart.
+                                    </p>
+
+                                    <p>
+                                        A useful information to include in the plot is the intensity of the conflict, i.e. whether it was a minor conflict with a number of suffered casualties that ranged between 25 and 1'000 for the entire period the conflict was active or a war, which means the number of battle-related deaths surpassed 1'000. Of course, it is interesting to obtain the <i>cumulative</i> conflict intensity taking into account the entire period the conflict was active and not just individual episodes or annual aggregates.
+                                    </p>
+
+                                    <p>
+                                        A node (circle) in the graph corresponds to a single actor in a conflict, which might be a government of a country or an organised group of any type. The size of each node in the plot depends on what is technically called the <i>degree</i> of that node. Simply stated, the degree of the node is the number of conflicts the corresponding actor has been involved in during the given time period. In addition, the colour of each node gives an intuition on the number of casualties due to battles each side has suffered, ranging from light yellow when the numbers are small, to dark red nuances as the number of deaths grows.
+                                    </p>
+
+                                    <p>
+                                        An edge (line going from one circle to the other) indicates an existent conflict between the sides represented by the two nodes. They are colour-coded for the conflict intensity. More specifically, minor conflicts which count between 25 and 1'000 battle-related deaths are shown by <i>light blue</i>, whereas major conflicts or wars which surpass the 1'000 casualties limit are shown in a <i>dark blue</i> colour.
+                                    </p>
+
+                                    <iframe width="680" height="604" frameborder="0" scrolling="no" src="//plot.ly/~vikjan94/7.embed?autosize=True&link=false&logo=false&width=100%"></iframe>
+                                    <h6 class="text-muted">The plot is interactive. Hovering over a node shows a label with the name and with more detailed information about the entity. There is also a possibility to pan around, zoom in and out on the entire plot or a selected region to analyse it in more detail. For a larger version of the graph plot, click <a href="./resources/state-based-conflict-graph.html" target="_blank">here</a>.</h6>
+
+                                    <p></p>
+
+                                    <p>
+                                        The total number of actors is 405 and they were involved in 355 state-based conflicts. Of course, the minimum number of conflicts a side can be involved in is 1, otherwise it would not have been depicted in the figure. The largest number of conflicts a single side has been involved in is 24.
+                                    </p>
+
+                                    <iframe width="680" height="604" frameborder="0" scrolling="no" src="//plot.ly/~vikjan94/9.embed?autosize=True&link=false&logo=false&width=100%"></iframe>
+                                    <h6 class="text-muted">The plot is interactive. Hovering over a node shows a label with the name and with more detailed information about the entity. There is also a possibility to pan around, zoom in and out on the entire plot or a selected region to analyse it in more detail. For a larger version of the graph plot, click <a href="./resources/non-state-conflict-graph.html" target="_blank">here</a>.</h6>
+
+                                    <p></p>
+
+                                    <p>
+                                        The above graph visualisation depicts the non-state conflict interactions between actors where there is no government of a state involved. The opposing sides are different types of organised groups (formally or informally organised). The total number of actors is 761 and they were involved in 575 non-state conflicts. Of course, the minimum number of conflicts a side can be involved in is 1, otherwise it would not have been depicted in the figure. The largest number of conflicts a single side has been involved in is 18.
+                                    </p>
+
+                                    <p>
+                                        As perhaps expected, the number of nodes in the non-state conflict graph is noticeably greater than the number of nodes in the case when one of the conflicted sides is the Government of a state. Of course, there is no limitation to the number of organisations that can be formed and that can enter a conflict for some reason and over a certain disagreement. Also, organisations are much more dynamic in their creation and cease of existence, whereas for states it is a much longer and slower process that can take decades or even centuries. In addition, the latter graph is much richer in the number of edges, i.e. the interactions between the parties, but it is also evident that, though more numerous, the interactions are in the vast majority of less gravity as they are considered minor conflicts according to the UCDP criteria.
+                                    </p>
+
+                                    <p>
+                                        The bigger number of war conflicts together with the much smaller number of connected components in the state-based conflict graph compared to the non-state graph is a clear indication that conflicts which involve a government as a conflicted side tend to have larger dimensions, they are not localised, but involve many other organisations and states. Much of it results from the fact that states have significantly more resources and a more organised way of warfare. Also, they are usually the primary target of many organisations. As an additional point, countries have international relations and interests which are global, whereas the activities of organised groups usually have a much more limited target, concern only a particular region or population group based on certain characteristics, etc.
+                                    </p>
+
+                                    <p>
+                                        Here we cannot use the argument that states have a larger number of conflicts and battle-related deaths due to their longer history as all the numbers are related to the time period between 1989 and 2016. However, one can argue that this is a sufficiently large time period for an organised group to form, reform, merge with other groups, form fractions, rename, cease to exist, etc., which breaks the continuity when analysing its activity. It is very difficult to differentiate whether the organised group should be considered the same or whether the conflict is the same once some of the previously mentioned events occur. As stated in the previous paragraph, clashes between organised groups are much smaller in magnitude, which is easily observed by the number of suffered casualties on each side.
+                                    </p>
+
+                                    <iframe width="680" height="604" frameborder="0" scrolling="no" src="//plot.ly/~vikjan94/11.embed?autosize=True&link=false&logo=false&width=100%"></iframe>
+                                    <h6 class="text-muted">The plot is interactive. Hovering over a node shows a label with the name and with more detailed information about the entity. There is also a possibility to pan around, zoom in and out on the entire plot or a selected region to analyse it in more detail. For a larger version of the graph plot, click <a href="./resources/zoom-in-state-conflict-graph.html" target="_blank">here</a>.</h6>
+
+                                    <p></p>
+
+                                    <p>
+                                        The above plot simply zooms-in on the largest connected component of the state-based conflict graph. It is remarkable that at the centre of this component is the node representation of IS (Islamic State), something that is very current and actual. The figure shows the 34'830 casualties that IS has suffered during the 15 conflicts it is involved in, mostly with countries from the Middle East and North Africa.
+                                    </p>
+
+                                    <hr />
+
+                                    <blockquote class="yummy-blockquote mt-30 mb-30">
+                                        <h5 class="mb-30">“The supreme art of war is to subdue the enemy without fighting.”</h5>
+                                        <h6 class="text-muted">Sun Tzu, The Art of War</h6>
+                                    </blockquote>
+
+                                    <h4>Battle locations map</h4>
+
 
                                    <!--  <ul class="mb-30">
                                         <li>1/3 cup Lonsectetur adipisicing elit.Lorem ipsum</li>
@@ -370,7 +541,7 @@
                                 <img src="img/about-img/profile-picture.jpg" alt="">
                             </div>
                             <h4 class="font-shadow-into-light">Viktor Janevski</h4>
-                            <p>I’m a charming, motivated and young computer scientist, an aspiring writer ready to touch the hearts of the World</p>
+                            <p>I’m a young, charming and motivated computer scientist, an aspiring writer ready to touch the hearts of the World</p>
                         </div>
 
                     </div>

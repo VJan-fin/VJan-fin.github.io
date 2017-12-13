@@ -176,6 +176,10 @@ img {
     margin-bottom: 30px;
 }
 
+.mb-40 {
+    margin-bottom: 40px;
+}
+
 .mb-50 {
     margin-bottom: 50px;
 }
@@ -1269,8 +1273,34 @@ li {
     text-transform: uppercase;
 }
 
+.br-20 {
+    border-radius: 20px !important;
+}
+
+.br-25 {
+    border-radius: 25px !important;
+}
+
 .br-30 {
     border-radius: 30px !important;
+}
+
+.badge-primary {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 2px solid #fc6c3f;
+    border-radius: 10px;
+    color: #fc6c3f;
+    padding: 10px 60px;
+}
+
+.list-group-item {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.list-group-item.active {
+    color: #fff;
+    background-color: #fc6c3f;
+    border-color: #fc6c3f;
 }
 
 .single_blog_area ul li {
