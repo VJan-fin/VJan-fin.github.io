@@ -455,7 +455,7 @@
                                         An edge (line going from one circle to the other) indicates an existent conflict between the sides represented by the two nodes. They are colour-coded for the conflict intensity. More specifically, minor conflicts which count between 25 and 1'000 battle-related deaths are shown by <i>light blue</i>, whereas major conflicts or wars which surpass the 1'000 casualties limit are shown in a <i>dark blue</i> colour.
                                     </p>
 
-                                    <iframe width="680" height="604" frameborder="0" scrolling="no" src="//plot.ly/~vikjan94/7.embed?autosize=True&link=false&logo=false&width=100%"></iframe>
+                                    <iframe width="680" height="604" frameborder="0" scrolling="no" src="./resources/state-based-conflict-graph.html"></iframe>
                                     <h6 class="text-muted">The plot is interactive. Hovering over a node shows a label with the name and with more detailed information about the entity. There is also a possibility to pan around, zoom in and out on the entire plot or a selected region to analyse it in more detail. For a larger version of the graph plot, click <a href="./resources/state-based-conflict-graph.html" target="_blank">here</a>.</h6>
 
                                     <p></p>
@@ -464,8 +464,8 @@
                                         The total number of actors is 405 and they were involved in 355 state-based conflicts. Of course, the minimum number of conflicts a side can be involved in is 1, otherwise it would not have been depicted in the figure. The largest number of conflicts a single side has been involved in is 24.
                                     </p>
 
-                                    <iframe width="680" height="604" frameborder="0" scrolling="no" src="//plot.ly/~vikjan94/9.embed?autosize=True&link=false&logo=false&width=100%"></iframe>
-                                    <h6 class="text-muted">The plot is interactive. Hovering over a node shows a label with the name and with more detailed information about the entity. There is also a possibility to pan around, zoom in and out on the entire plot or a selected region to analyse it in more detail. For a larger version of the graph plot, click <a href="./resources/non-state-conflict-graph.html" target="_blank">here</a>.</h6>
+                                    <!-- <iframe width="680" height="604" frameborder="0" scrolling="no" src="//plot.ly/~vikjan94/9.embed?autosize=True&link=false&logo=false&width=100%"></iframe>
+                                    <h6 class="text-muted">The plot is interactive. Hovering over a node shows a label with the name and with more detailed information about the entity. There is also a possibility to pan around, zoom in and out on the entire plot or a selected region to analyse it in more detail. For a larger version of the graph plot, click <a href="./resources/non-state-conflict-graph.html" target="_blank">here</a>.</h6> -->
 
                                     <p></p>
 
@@ -485,8 +485,8 @@
                                         Here we cannot use the argument that states have a larger number of conflicts and battle-related deaths due to their longer history as all the numbers are related to the time period between 1989 and 2016. However, one can argue that this is a sufficiently large time period for an organised group to form, reform, merge with other groups, form fractions, rename, cease to exist, etc., which breaks the continuity when analysing its activity. It is very difficult to differentiate whether the organised group should be considered the same or whether the conflict is the same once some of the previously mentioned events occur. As stated in the previous paragraph, clashes between organised groups are much smaller in magnitude, which is easily observed by the number of suffered casualties on each side.
                                     </p>
 
-                                    <iframe width="680" height="604" frameborder="0" scrolling="no" src="//plot.ly/~vikjan94/11.embed?autosize=True&link=false&logo=false&width=100%"></iframe>
-                                    <h6 class="text-muted">The plot is interactive. Hovering over a node shows a label with the name and with more detailed information about the entity. There is also a possibility to pan around, zoom in and out on the entire plot or a selected region to analyse it in more detail. For a larger version of the graph plot, click <a href="./resources/zoom-in-state-conflict-graph.html" target="_blank">here</a>.</h6>
+                                    <!-- <iframe width="680" height="604" frameborder="0" scrolling="no" src="//plot.ly/~vikjan94/11.embed?autosize=True&link=false&logo=false&width=100%"></iframe>
+                                    <h6 class="text-muted">The plot is interactive. Hovering over a node shows a label with the name and with more detailed information about the entity. There is also a possibility to pan around, zoom in and out on the entire plot or a selected region to analyse it in more detail. For a larger version of the graph plot, click <a href="./resources/zoom-in-state-conflict-graph.html" target="_blank">here</a>.</h6> -->
 
                                     <p></p>
 
@@ -503,26 +503,226 @@
 
                                     <h4>Battle locations map</h4>
 
+                                    <p>
+                                        Another informative visualisation which implies taking advantage of the fine-grained geo-coding information available in the UCDP Georeferenced Event Dataset is creating an interactive map with markers pinpointing the geographical locations where there was an armed conflict episode in the period 1989-2016. However, the dataset consists of 135'181 distinct conflict episodes, 38'657 of which are unique battles that took part on a particular location during a conflict. Therefore, there are 38'657 unique locations which need to be represented on the map somehow. This is a huge number of points on the map. In order to reduce the crowdedness, I decided to take the largest battle from every conflict and depict only that one on the interactive map. The "largest" battle is simply the one that resulted in the largest number of casualties according to the best estimate. This produces 997 pins, which is more feasible and clearer to analyse.
+                                    </p>
 
-                                   <!--  <ul class="mb-30">
-                                        <li>1/3 cup Lonsectetur adipisicing elit.Lorem ipsum</li>
-                                        <li>1/2 cup Veniam, quis nostrud exercitation</li>
-                                        <li>Ut labore et dolore magna</li>
-                                        <li>Lonsectetur adipisicing elit.Lorem ipsum</li>
-                                        <li>Lonsectetur adipisicing elit.Lorem ipsum</li>
-                                        <li>Ut labore et dolore magna</li>
-                                        <li>Lonsectetur adipisicing elit.Lorem ipsum</li>
-                                    </ul>
+                                    <iframe width="680" height="500" src="./resources/battle-map.html"></iframe>
+                                    <h6 class="text-muted">The map is interactive, which means the markers can be clicked on. Hovering over a cluster of markers highlights a polygon area on the map indicating the positions of the markers it is grouping. Clicking on a cluster of markers automatically zooms in and shows smaller clusters or individual markers. Clicking on an individual marker displays the so-called <i>battle card</i> with useful information about each battle. For a full-size version of the map, click <a href="./resources/battle-map.html" target="_blank">here</a>.</h6>
 
-                                    <img class="br-30 mb-15" src="img/blog-img/14.jpg" alt=""> -->
+                                    <p></p>
+
+                                    <p>
+                                        The styling of the maps is intentionally chosen to include only the smallest level of details and the most necessary information in order to ensure focus on the markers and the goal of the map, which is to present the battle locations for different conflicts on the World map. To improve visibility and omit unnecessary information and crowding on a smaller zoom level, the markers are grouped into clusters. Using the plus and minus signs on the map (or any other way to control the zoom level) will reveal the individual locations of a battle. The colour of the circle indicating a marker cluster ranges from green to orange/red as the number of markers in the group is growing.
+                                    </p>
+
+                                    <p>
+                                        A second interactive map shows the 200 largest battle locations, but not aggregated by conflict. It focuses on the places where the largest number of fatalities was observed following a violent event.
+                                    </p>
+
+                                    <iframe width="680" height="500" src="./resources/biggest-battles-map.html"></iframe>
+                                    <h6 class="text-muted">The map is interactive, which means the markers can be clicked on. Hovering over a cluster of markers highlights a polygon area on the map indicating the positions of the markers it is grouping. Clicking on a cluster of markers automatically zooms in and shows smaller clusters or individual markers. Clicking on an individual marker displays the so-called <i>battle card</i> with useful information about each battle. For a full-size version of the map, click <a href="./resources/biggest-battles-map.html" target="_blank">here</a>.</h6>
+
+                                    <p></p>
+
+                                    <hr />
+                                    
+                                    <blockquote class="yummy-blockquote mt-30 mb-30">
+                                        <h5 class="mb-30">“What difference does it make to the dead, the orphans and the homeless, whether the mad destruction is wrought under the name of totalitarianism or in the holy name of liberty or democracy?”</h5>
+                                        <h6 class="text-muted">Mahatma Gandhi</h6>
+                                    </blockquote>
+
+                                    <h4>Internal conflict index</h4>
+
+                                    <p>
+                                        Inevitably, there are two question that naturally appear when doing an analysis like the one presented here:
+
+                                        <ul class="mb-30">
+                                            <li>How do we identify "problematic" regions on the World map based with recent or on-going conflicts?</li>
+                                            <li>How do we rate regions based on the history of conflicts they were involved in and their respective magnitude?</li>
+                                        </ul>
+                                    </p>
+
+                                    <p>
+                                        In order to rate the countries, we need to have a kind of quantitative measure used for comparison. One way of expressing the internal and external conflict state of a country numerically is to use the <a href="https://en.wikipedia.org/wiki/Global_Peace_Index" target="_blank">Global Peace Index (GPI)</a> measure. Nevertheless, GPI actually uses UCDP datasets such as UCDP Armed Conflict Dataset and UCDP Battle-related Deaths Dataset. Of course, this is a well established methodology, but requires many more additional sources of data, which means it will not be representative of the datasets we have in hand. Therefore, we will develop a strategy of computing a so-called <b>internal conflict index</b> which will give a rough idea of where each country stands in terms of internal peace on the global scale.
+                                    </p>
+
+                                    <p>
+                                        It is important to mention however that the <i>internal conflict index</i> is a simple way to combine all the values available for a country: number of conflicts, time since last conflict, number of casualties and intensity of the conflict. It is not a scientific measure, it does not follow an established and prooven methodology, nor the weights have been derived or determined by domain experts. What we need is a means to visualise countries on the map relative to one another, taking into respect the data available.
+                                    </p>
+
+                                    <p>
+                                        First, to give some context to the variables used to compute the index.
+
+                                        <ul class="mb-30">
+                                            <li><b>Intensity weight:</b> The cumulative intensity of a conflict is converted into a weighting factor where wars are weighted by a factor of 1 and minor conflicts by 0.3, due to a relative difference in gravity. This weight is then used as a factor in an attempt to say that a country recuperates from a minor conflict more easily, but it takes a lot longer after a major conflict.</li>
+                                            <li><b>Duration:</b> The year span between the dates of the first and the last record of a conflict episode. This value is proportional to the <i>internal conflict index</i>, which makes sence since usually the shorter the conflicts are, the less damage they leave behind. The value is scaled to be in the range [0,1].</li>
+                                            <li><b>Weighted deaths:</b> In order to take into account all the different provided death estimates, a weighted average is performed, such that the best estimate is given a weight of 0.5 and the low and high account for 0.25 each. The greater the number of deaths is, the larger the intensity and severity of the conflict. The value is scaled to be in the range [0,1].</li>
+                                            <li><b>Years since:</b> The number of years between the last record of a conflict episode and 2016 (which is the last available year in the dataset, so it will be considered as the current year). Contrary to <i>duration</i> and <i>weighted deaths</i>, the lower the value of <i>years since</i> the worse. Therefore, this variable is included in the equation as <i>1 − years since</i>. This is intuitive as we want to give smaller meaning to conflicts which are not recent as it is supposed the situation has calmed down since. The value is scaled to be in the range [0,1].</li>
+                                            <li><b>Conflict grade:</b>A single numeric value that summarises the above-mentioned attributes and gives a grade of the severity of a conflict. The equation for computing it is given below. A lower value indicates a smaller overall intensity of the conflict.</li>
+                                        </ul>
+                                    </p>
+
+                                    <p>
+                                        The <i>conflict grade</i> value is a measure of an individual conflict between two sides, but it doesn't capture the number of conflicts that have taken place on a particular location and their respective intensity. Also, it needs to be taken into account whether there are still some active conflicts in particular countries and mark them "problematic" or "unsafe". Therefore, we introduce the <i>total conflict activity</i> grade which does exactly that. The result is a single value per country summarising the number of conflicts for each intensity type. Similarly, the higher the number, the more problematic a country is, since it means it had more conflicts in its history or more severe conflicts.
+                                    </p>
+
+                                    <p>
+                                        Since the countries where there is an on-going conflict should be considered non-peaceful, it is natural to give a much larger weight to the number of active conflicts as opposed to the inactive ones. The <i>total conflict activity</i> grade is computed as a weighted sum depending on the intensity of the conflict, where wars are weighted by a factor of 1 and minor conflicts by 0.3, same as in the case above. Wars are much more serious, long-lasting and result in a larger number of casualties, therefore the large difference between the weights. A minor conflict can have only a few dozen casualties compared to the thousands in a war conflict.
+                                    </p>
+
+                                    <p>
+                                        The <b>internal conflict index</b> is simply a sum of the <i>conflict grade</i> and the <i>total conflict activity grade</i> measures.
+                                    </p>
+
+                                    <p>
+                                        Finally, after a long and tiring analysis, here are the results. The first table shows the top 10 countries with highest index values, i.e. the "problematic" ones, and the second one the 10 which are at the bottom of the list. This is one of the times in life when you're glad you're at the bottom of a list. 
+
+                                        <h6 class="text-muted">Top 10</h6>
+                                        <table class="yummy-table table table-hover table-bordered table-striped">
+                                            <tr>
+                                                <th class="yummy-table-cell">Country</th>
+                                                <th class="yummy-table-cell">Internal conflict index</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="yummy-table-cell">DR Congo</td>
+                                                <td class="yummy-table-cell">32.911026</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="yummy-table-cell">Sudan</td>
+                                                <td class="yummy-table-cell">31.463429</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="yummy-table-cell">India</td>
+                                                <td class="yummy-table-cell">30.737254</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="yummy-table-cell">Nigeria</td>
+                                                <td class="yummy-table-cell">29.124279</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="yummy-table-cell">Pakistan</td>
+                                                <td class="yummy-table-cell">19.849043</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="yummy-table-cell">Ethiopia</td>
+                                                <td class="yummy-table-cell">18.983222</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="yummy-table-cell">Somalia</td>
+                                                <td class="yummy-table-cell">18.005608</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="yummy-table-cell">Afghanistan</td>
+                                                <td class="yummy-table-cell">15.526367</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="yummy-table-cell">Iraq</td>
+                                                <td class="yummy-table-cell">13.771339</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="yummy-table-cell">Myanmar</td>
+                                                <td class="yummy-table-cell">13.516065</td>
+                                            </tr>
+                                        </table>
+
+                                        <h6 class="text-muted mt-40">Bottom 10</h6>
+                                        <table class="yummy-table table table-hover table-bordered table-striped">
+                                            <tr>
+                                                <th class="yummy-table-cell">Country</th>
+                                                <th class="yummy-table-cell">Internal conflict index</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="yummy-table-cell">Swaziland</td>
+                                                <td class="yummy-table-cell">0.000883</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="yummy-table-cell">Paraguay</td>
+                                                <td class="yummy-table-cell">0.000974</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="yummy-table-cell">Rumania</td>
+                                                <td class="yummy-table-cell">0.002154</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="yummy-table-cell">Panama</td>
+                                                <td class="yummy-table-cell">0.002485</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="yummy-table-cell">Botswana</td>
+                                                <td class="yummy-table-cell">0.011994</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="yummy-table-cell">Netherlands</td>
+                                                <td class="yummy-table-cell">0.011995</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="yummy-table-cell">Trinidad and Tobago</td>
+                                                <td class="yummy-table-cell">0.012018</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="yummy-table-cell">Nicaragua</td>
+                                                <td class="yummy-table-cell">0.023442</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="yummy-table-cell">Argentina</td>
+                                                <td class="yummy-table-cell">0.034220</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="yummy-table-cell">Moldova</td>
+                                                <td class="yummy-table-cell">0.034530</td>
+                                            </tr>
+                                        </table>
+                                    </p>
+
+                                    <p class="mt-40">
+                                        It's good to conclude this long section with a nice plot.
+                                    </p>
+
+                                    <iframe width="680" height="500" src="./resources/internal-conflict-index-map.html"></iframe>
+                                    <h6 class="text-muted">For a full-size version of the map, click <a href="./resources/internal-conflict-index-map.html" target="_blank">here</a>.</h6>
+
+                                    <p></p>
+
+                                    <p>
+                                        The colours range from the minimum to the maximum value of the index. The colormap is chosen to represent smaller values of the index with a light shade of beige, values in the middle with orange to red shades, whereas larger values found at the extreme end are represented as dark red. Red is usually associated with something alarming and serious, hence it is the right colour to depict a country struck by war, internal conflicts and suffering the losses of people's lives. Countries on whose territory there has not been an incident or conflict episode in the period 1989-2016 are coloured in grey. This does not mean they have not participated in a conflict, but simply that they have not experienced a conflict episode internally, on their own territory.
+                                    </p>
+
+                                    <hr />
+                                    
+                                    <blockquote class="yummy-blockquote mt-30 mb-30">
+                                        <h5 class="mb-30">“Mankind must put an end to war before war puts an end to mankind.”</h5>
+                                        <h6 class="text-muted">John F. Kennedy</h6>
+                                    </blockquote>
+
+                                    <h4>Conflict word cloud</h4>
+
+                                    <p>
+                                        In the end, simply for the sake of fun, we give a word cloud of the most common terms from the UCDP Georeferenced Event Dataset and UCDP/PRIO Armed Conflict Dataset. More concretely, the analysis focuses on the names of the countries that took part as a side (an actor) in a particular conflict, the country names and the regions of the battle locations, the type of violence, reasons for incompatibility and the conflict intensity level.
+                                    </p>
+
+                                    <p>
+                                        The most prominent terms are: state-based (referring to the state-based type conflicts where at least one side is the government of a country), Afghanistan, Asia, Taleban (referring to the organised group) and one-sided (also referring to a type of conflict where civilians were attacked by governments of a state or an organised group).
+                                    </p>
+
+                                    <img class="br-30 mb-15" src="img/blog-img/world-cloud.png" alt="">
+
+                                    <hr />
+                                    
+                                    <h6 class="text-muted">Instead of a conclusion, because I will not be able to summarise it better.</h6>
+                                    <blockquote class="yummy-blockquote mt-30 mb-30">
+                                        <h5 class="mb-30">“I refuse to accept the view that mankind is so tragically bound to the starless midnight of racism and war that the bright daybreak of peace and brotherhood can never become a reality... I believe that unarmed truth and unconditional love will have the final word.”</h5>
+                                        <h6 class="text-muted">Martin Luther King, Jr.</h6>
+                                    </blockquote>
+
                                 </div>
                             </div>
 
                             <!-- Tags Area -->
                             <div class="tags-area">
-                                <a href="#">Multipurpose</a>
-                                <a href="#">Design</a>
-                                <a href="#">Ideas</a>
+                                <a href="#">Conflict</a>
+                                <a href="#">World</a>
+                                <a href="#">History</a>
                             </div>
 
                         </div>
@@ -557,13 +757,13 @@
         <!-- Instagram Item -->
         <div class="instagram_gallery_item">
             <!-- Instagram Thumb -->
-            <img src="img/instagram-img/1.jpg" alt="">
+            <img src="img/blog-img/1.jpg" alt="">
             <!-- Hover -->
             <div class="hover_overlay">
                 <div class="yummy-table">
                     <div class="yummy-table-cell">
                         <div class="follow-me text-center">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
+                            <a href="https://www.instagram.com/michaelchristopherbrown/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> michaelchristopherbrown</a>
                         </div>
                     </div>
                 </div>
@@ -573,13 +773,13 @@
         <!-- Instagram Item -->
         <div class="instagram_gallery_item">
             <!-- Instagram Thumb -->
-            <img src="img/instagram-img/2.jpg" alt="">
+            <img src="img/blog-img/2.jpg" alt="">
             <!-- Hover -->
             <div class="hover_overlay">
                 <div class="yummy-table">
                     <div class="yummy-table-cell">
                         <div class="follow-me text-center">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
+                            <a href="https://www.instagram.com/benlowy/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> benlowy</a>
                         </div>
                     </div>
                 </div>
@@ -589,13 +789,13 @@
         <!-- Instagram Item -->
         <div class="instagram_gallery_item">
             <!-- Instagram Thumb -->
-            <img src="img/instagram-img/3.jpg" alt="">
+            <img src="img/blog-img/3.jpg" alt="">
             <!-- Hover -->
             <div class="hover_overlay">
                 <div class="yummy-table">
                     <div class="yummy-table-cell">
                         <div class="follow-me text-center">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
+                            <a href="https://www.instagram.com/philmoorephoto/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> philmoorephoto</a>
                         </div>
                     </div>
                 </div>
@@ -605,13 +805,13 @@
         <!-- Instagram Item -->
         <div class="instagram_gallery_item">
             <!-- Instagram Thumb -->
-            <img src="img/instagram-img/4.jpg" alt="">
+            <img src="img/blog-img/4.jpg" alt="">
             <!-- Hover -->
             <div class="hover_overlay">
                 <div class="yummy-table">
                     <div class="yummy-table-cell">
                         <div class="follow-me text-center">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
+                            <a href="https://www.instagram.com/michaelchristopherbrown/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> michaelchristopherbrown</a>
                         </div>
                     </div>
                 </div>
@@ -621,13 +821,13 @@
         <!-- Instagram Item -->
         <div class="instagram_gallery_item">
             <!-- Instagram Thumb -->
-            <img src="img/instagram-img/5.jpg" alt="">
+            <img src="img/blog-img/5.jpg" alt="">
             <!-- Hover -->
             <div class="hover_overlay">
                 <div class="yummy-table">
                     <div class="yummy-table-cell">
                         <div class="follow-me text-center">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
+                            <a href="https://www.instagram.com/benlowy/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> benlowy</a>
                         </div>
                     </div>
                 </div>
@@ -637,13 +837,13 @@
         <!-- Instagram Item -->
         <div class="instagram_gallery_item">
             <!-- Instagram Thumb -->
-            <img src="img/instagram-img/6.jpg" alt="">
+            <img src="img/blog-img/6.jpg" alt="">
             <!-- Hover -->
             <div class="hover_overlay">
                 <div class="yummy-table">
                     <div class="yummy-table-cell">
                         <div class="follow-me text-center">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
+                            <a href="https://www.instagram.com/philmoorephoto/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> philmoorephoto</a>
                         </div>
                     </div>
                 </div>
@@ -653,13 +853,13 @@
         <!-- Instagram Item -->
         <div class="instagram_gallery_item">
             <!-- Instagram Thumb -->
-            <img src="img/instagram-img/1.jpg" alt="">
+            <img src="img/blog-img/7.jpg" alt="">
             <!-- Hover -->
             <div class="hover_overlay">
                 <div class="yummy-table">
                     <div class="yummy-table-cell">
                         <div class="follow-me text-center">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
+                            <a href="https://www.instagram.com/benlowy/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> benlowy</a>
                         </div>
                     </div>
                 </div>
@@ -669,20 +869,51 @@
         <!-- Instagram Item -->
         <div class="instagram_gallery_item">
             <!-- Instagram Thumb -->
-            <img src="img/instagram-img/2.jpg" alt="">
+            <img src="img/blog-img/8.jpg" alt="">
             <!-- Hover -->
             <div class="hover_overlay">
                 <div class="yummy-table">
                     <div class="yummy-table-cell">
                         <div class="follow-me text-center">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
+                            <a href="https://www.instagram.com/benlowy/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> benlowy</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-    </div>
+        <!-- Instagram Item -->
+        <div class="instagram_gallery_item">
+            <!-- Instagram Thumb -->
+            <img src="img/blog-img/9.jpg" alt="">
+            <!-- Hover -->
+            <div class="hover_overlay">
+                <div class="yummy-table">
+                    <div class="yummy-table-cell">
+                        <div class="follow-me text-center">
+                            <a href="https://www.instagram.com/marcusbleasdale/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> marcusbleasdale</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instagram Item -->
+        <div class="instagram_gallery_item">
+            <!-- Instagram Thumb -->
+            <img src="img/blog-img/10.jpg" alt="">
+            <!-- Hover -->
+            <div class="hover_overlay">
+                <div class="yummy-table">
+                    <div class="yummy-table-cell">
+                        <div class="follow-me text-center">
+                            <a href="https://www.instagram.com/marcusbleasdale/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> marcusbleasdale</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     <!-- ****** Our Creative Portfolio Area End ****** -->
 
     <!-- ****** Footer Social Icon Area Start ****** -->
