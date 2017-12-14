@@ -1218,6 +1218,14 @@ li {
     line-height: 30px;
 }
 
+.single-post-share-info a.github {
+    background-color: #333;
+}
+
+.single-post-share-info a.github:hover {
+    background-color: #222;
+}
+
 .single-post-share-info a.facebook {
     background-color: #4c65a8;
 }
